@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyShapeLibrary
 {
-    internal class Forme
-    {
 
+    public abstract class Forme
+    {
+        public Coordonnee PointAccroche { get; set; }
+
+        protected Forme()
+        {
+            PointAccroche = new Coordonnee();
+        }
     }
 }
